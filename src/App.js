@@ -1,6 +1,11 @@
 import './App.css';
+import Multiselect from 'multiselect-react-dropdown'
+import { useState } from 'react';
 
 function App() {
+
+  const [options, setOptions] = useState(['option 1', 'option 2'])
+
   return (  
   <div>
     <h1>Trip Name</h1>
@@ -19,7 +24,9 @@ function App() {
         <option>temp</option>
       </select>
 
+      <Multiselect isObject={false} options={options} showCheckbox/>
     </form>
+
   </div>
   );
 }
