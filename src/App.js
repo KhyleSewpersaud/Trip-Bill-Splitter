@@ -38,7 +38,9 @@ function App() {
           </div>
           <div className='right'>
             <div className='transfer-to-output'>$150 to Bob</div>
-            <div className='who-owes-output'>[Dave, John]</div>
+            <div className='who-owes-output'>
+              <Multiselect isObject={false} options={options} showCheckbox hideSelectedList placeholder='Add Who Owes' className='multi'/>
+            </div>
           </div>
         </div>
       </div>
