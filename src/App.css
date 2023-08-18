@@ -1,38 +1,116 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 65rem;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-left: 35rem;
+  font-size: x-large;
+}
+
+body {
+  background-color: #161B33;
+  color: #F1DAC4;
+}
+
+h1, h2 {
   text-align: center;
+  color: #fff;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: #F1DAC4;
+  margin-bottom: 1.1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+form {
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form input {
+  width: 100%;
+  font-size: large;
+  background-color: transparent;
+  color: rgb(118, 118, 118);
+  border: 2px solid #0D0C1D;
+}
+
+.add-guest-style {
+  display: flex;
+  justify-content: center;
+}
+
+.add-expense {
+  grid-column: 1 / 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.add-guest-box {
+  width: 60%;
+}
+
+.info-basics {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.info-logistics {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+select {
+  flex: 1;
+  background-color: transparent;
+  color: rgb(118, 118, 118);
+  border: 2px solid #0D0C1D;
+  font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.expense-submit {
+  width: 25%;
+}
+
+.multiselect-container {
+  width: 100%;
+}
+
+.guest {
+  justify-self: right;
+}
+
+.expense-submit {
+  margin-top: 0.5rem;
+  font-size: large;
+  background-color: #7a7a7a;
+  color: #ddd;
+  border: 2px solid #0D0C1D;
+}
+
+.transactions {
+  margin-top: 2rem;
+}
+
+.transaction {
+  display: flex;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+}
+
+.description-output {
+  font-size: 2.5rem;
+}
+
+.date-output {
+  font-size: 1.3rem;
 }
