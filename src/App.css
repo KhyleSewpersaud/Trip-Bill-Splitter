@@ -77,10 +77,6 @@ select {
   font-size: large;
 }
 
-.expense-submit {
-  width: 25%;
-}
-
 .multiselect-container {
   width: 100%;
 }
@@ -95,6 +91,7 @@ select {
   background-color: #7a7a7a;
   color: #ddd;
   border: 2px solid #0D0C1D;
+  width: 25%;
 }
 
 .transactions {
@@ -105,6 +102,7 @@ select {
   display: flex;
   padding: 0.5rem 0;
   justify-content: space-between;
+  border-top: 1px solid #7a7a7a;
 }
 
 .description-output {
@@ -113,4 +111,12 @@ select {
 
 .date-output {
   font-size: 1.3rem;
+}
+
+.right {
+  text-align: right;
+}
+
+.transfer-to-output {
+  font-size: larger;
 }
